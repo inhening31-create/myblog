@@ -100,7 +100,11 @@ color: var(--text-dark);
 
 /* ===== 列表與段落 ===== */
 p { margin: 16px 0; }
-ul, ol { margin: 16px 0 24px 24px; padding-left: 0; }
+ul, ol { 
+  margin: 16px 0 24px 24px; 
+  padding-left: 0; 
+  font-size: 1rem;       /* 跟介紹文字一致 */
+  line-height: 1.8;      /* 同行高 */ }
 li { margin-bottom: 8px; }
 
 /* ===== 核心改造：技巧提示 Tip Box ===== */

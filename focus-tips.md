@@ -28,7 +28,7 @@ header_subtitle: 把複雜的工作拆成可執行的小步驟，讓專注變成
     <li>專心工作直到計時器響起 → 記錄一個番茄（Pomodoro）。</li>
     <li>休息 5 分鐘；每完成 4 個番茄休息 15-30 分鐘。</li>
   </ol>
-  <a class="cta" href="https://inhening31-create.github.io/inhening/pomodpro.html" target="_blank" rel="noopener">
+  <a class="cta" href="https://inhening31-create.github.io/inhening/pomodoro.html" target="_blank" rel="noopener">
     打開我的番茄鐘
   </a>
 </div>
@@ -79,12 +79,12 @@ header_subtitle: 把複雜的工作拆成可執行的小步驟，讓專注變成
     <div class="link-card">
       <h4>番茄工作法完整介紹</h4>
       <p>起源、完整流程、為什麼有效。適合想深入了解 Pomodoro 原理的人。</p>
-      <a href="https://inhening31-create.github.io/inhening/pomodpro-blog.html" class="cta" style="background:#4caf50">閱讀介紹文章</a>
+      <a href="https://inhening31-create.github.io/inhening/pomodoro-blog.html" class="cta" style="background:#4caf50">閱讀介紹文章</a>
     </div>
     <div class="link-card">
       <h4>使用 MyPomodoro App（線上番茄鐘）</h4>
       <p>直接打開線上的番茄鐘，開始一個番茄輪次。</p>
-      <a href="https://inhening31-create.github.io/inhening/pomodpro.html" target="_blank" rel="noopener" class="cta">打開番茄鐘</a>
+      <a href="https://inhening31-create.github.io/inhening/pomodoro.html" target="_blank" rel="noopener" class="cta">打開番茄鐘</a>
     </div>
   </div>
 
