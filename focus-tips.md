@@ -63,7 +63,7 @@ header_subtitle: 把複雜的工作拆成可執行的小步驟，讓專注變成
   </ul>
 </div>
 
-<h3>實戰範例：45 分鐘工作流程（適合需要較長思考深度的任務）<h3>
+<h3>實戰範例：45 分鐘工作流程（適合需要較長思考深度的任務）</h3>
 <p>步驟：</p>
 <ol>
   <li>規劃 1 個微目標（5 分鐘）</li>
@@ -79,7 +79,7 @@ header_subtitle: 把複雜的工作拆成可執行的小步驟，讓專注變成
     <div class="link-card">
       <h4>番茄工作法完整介紹</h4>
       <p>起源、完整流程、為什麼有效。適合想深入了解 Pomodoro 原理的人。</p>
-      <a href="https://inhening31-create.github.io/inhening/pomodoro-blog.html" class="cta" style="background:#4caf50">閱讀介紹文章</a>
+      <a href="https://inhening31-create.github.io/inhening/pomodoro-intro.html" class="cta" style="background:#4caf50">閱讀介紹文章</a>
     </div>
     <div class="link-card">
       <h4>使用 MyPomodoro App（線上番茄鐘）</h4>
