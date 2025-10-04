@@ -63,7 +63,7 @@ header_subtitle: 把複雜的工作拆成可執行的小步驟，讓專注變成
   </ul>
 </div>
 
-<h2>實戰範例：45 分鐘工作流程（適合需要較長思考深度的任務）<h2>
+<h3>實戰範例：45 分鐘工作流程（適合需要較長思考深度的任務）<h3>
 <p>步驟：</p>
 <ol>
   <li>規劃 1 個微目標（5 分鐘）</li>
@@ -72,19 +72,19 @@ header_subtitle: 把複雜的工作拆成可執行的小步驟，讓專注變成
 </ol>
 <p>這個流程把「儀式 + 微目標 + 單一任務」結合，適合寫作或程式設計等需要長時間思考的活動。</p>
 
-<div style="background-color: #f7f7f7; padding: 24px; border-radius: 10px; margin-top: 30px;">
+<div class="reading-section">
 
-  <h2>延伸閱讀</h2>
+  <h3>延伸閱讀</h3>
   <div class="links">
     <div class="link-card">
       <h4>番茄工作法完整介紹</h4>
       <p>起源、完整流程、為什麼有效。適合想深入了解 Pomodoro 原理的人。</p>
-      <a href="..." class="cta" style="background:#4caf50">閱讀介紹文章</a>
+      <a href="https://inhening31-create.github.io/inhening/pomodpro-blog.html" class="cta" style="background:#4caf50">閱讀介紹文章</a>
     </div>
     <div class="link-card">
       <h4>使用 MyPomodoro App（線上番茄鐘）</h4>
       <p>直接打開線上的番茄鐘，開始一個番茄輪次。</p>
-      <a href="..." target="_blank" rel="noopener" class="cta">打開番茄鐘</a>
+      <a href="https://inhening31-create.github.io/inhening/pomodpro.html" target="_blank" rel="noopener" class="cta">打開番茄鐘</a>
     </div>
   </div>
 
@@ -93,4 +93,3 @@ header_subtitle: 把複雜的工作拆成可執行的小步驟，讓專注變成
 <p style="margin-top:20px;">
   <strong>開始練習吧：</strong>從今天挑一個技巧試 1 週，並記錄下每天的改變。
 </p>
-</article>

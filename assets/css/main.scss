@@ -1,180 +1,179 @@
 ---
 ---
-/* ===== 全局變數設定 (方便統一管理風格) ===== */
-    :root {
-    /* 1. 色彩計畫：溫暖、柔和、有活力 */
-    --theme-color: #E87A5D;      /* 主題色：溫暖的番茄橘紅色，取代原本刺眼的紅 */
-    --theme-light: #FDF3EF;     /* 輔助色：淡淡的橘粉色，用於提示區塊背景 */
-    --text-dark: #4A4A4A;       /* 主要文字顏色：深灰色，比純黑更柔和 */
-    --text-light: #7A7A7A;      /* 次要文字顏色：灰色，用於描述等 */
-    --bg-color: #FDFCFB;       /* 頁面背景色：非常淡的米白，比純白溫暖 */
-    --card-bg: #FFFFFF;        /* 卡片背景：純白，與背景形成對比 */
-    --border-color: #EAEAEA;    /* 邊框顏色：淺灰色 */
-    
-    /* 2. 尺寸與排版 */
-    --max-width: 800px;        /* 內容最大寬度稍微縮小，讓閱讀更輕鬆 */
-    --border-radius-sm: 8px;   /* 小圓角 */
-    --border-radius-md: 12px;  /* 中圓角 (推薦) */
-    }
+:root {
+/* 1. 色彩計畫：溫暖、柔和、有活力 */
+--theme-color: #E87A5D;      /* 主題色：溫暖的番茄橘紅色，取代原本刺眼的紅 */
+--theme-light: #FDF3EF;     /* 輔助色：淡淡的橘粉色，用於提示區塊背景 */
+--text-dark: #4A4A4A;       /* 主要文字顏色：深灰色，比純黑更柔和 */
+--text-light: #7A7A7A;      /* 次要文字顏色：灰色，用於描述等 */
+--bg-color: #FDFCFB;       /* 頁面背景色：非常淡的米白，比純白溫暖 */
+--card-bg: #FFFFFF;        /* 卡片背景：純白，與背景形成對比 */
+--border-color: #EAEAEA;    /* 邊框顏色：淺灰色 */
 
-    /* ===== 基礎樣式重設 ===== */
-    * { 
-    box-sizing: border-box; 
-    }
+/* 2. 尺寸與排版 */
+--max-width: 800px;        /* 內容最大寬度稍微縮小，讓閱讀更輕鬆 */
+--border-radius-sm: 8px;   /* 小圓角 */
+--border-radius-md: 12px;  /* 中圓角 (推薦) */
+}
 
-    body {
+/* ===== 基礎樣式重設 ===== */
+* { 
+box-sizing: border-box; 
+}
+
+body {
     font-family: "Noto Sans TC", "Helvetica Neue", Arial, sans-serif;
     margin: 0;
     background-color: var(--bg-color); /* 使用新的背景色 */
     color: var(--text-dark);           /* 使用新的主要文字顏色 */
     line-height: 1.8;                  /* 增加行高，讓文字更好讀 */
-    }
+}
 
     /* ===== 導覽列 Navbar ===== */
-    nav {
-    background-color: var(--card-bg); /* 改成白色，更簡潔 */
-    padding: 16px 20px;
-    display: flex;
-    justify-content: center;
-    gap: 24px; 
-    border-bottom: 1px solid var(--border-color); /* 增加一個細細的底線，更有質感 */
-    }
-    nav a {
-    color: var(--text-light);
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: color 0.2s ease; /* 增加一個滑順的顏色過渡效果 */
-    }
-    nav a:hover {
-    color: var(--theme-color); /* 滑鼠移上去變成主題色 */
-    text-decoration: none;
-    }
-    nav a.active {
-    color: var(--theme-color);
-    font-weight: 700;
-    }
+nav {
+background-color: var(--card-bg); /* 改成白色，更簡潔 */
+padding: 16px 20px;
+display: flex;
+justify-content: center;
+gap: 24px; 
+border-bottom: 1px solid var(--border-color); /* 增加一個細細的底線，更有質感 */
+}
+nav a {
+color: var(--text-light);
+text-decoration: none;
+font-size: 1rem;
+font-weight: 500;
+transition: color 0.2s ease; /* 增加一個滑順的顏色過渡效果 */
+}
+nav a:hover {
+color: var(--theme-color); /* 滑鼠移上去變成主題色 */
+text-decoration: none;
+}
+nav a.active {
+color: var(--theme-color);
+font-weight: 700;
+}
 
-    /* ===== 頁首 Header ===== */
-    header {
-    background: none; /* 去掉背景色，讓頁面更通透 */
-    padding: 48px 20px;
-    text-align: center;
-    }
-    header h1 { 
-    margin: 0; 
-    font-size: 2.2rem; /* 標題放大，更有氣勢 */
-    color: var(--text-dark);
-    }
-    header p { 
-    margin: 8px 0 0; 
-    color: var(--text-light);
-    font-size: 1.1rem;
-    }
+/* ===== 頁首 Header ===== */
+header {
+background: none; /* 去掉背景色，讓頁面更通透 */
+padding: 48px 20px;
+text-align: center;
+}
+header h1 { 
+margin: 0; 
+font-size: 2.2rem; /* 標題放大，更有氣勢 */
+color: var(--text-dark);
+}
+header p { 
+margin: 8px 0 0; 
+color: var(--text-light);
+font-size: 1.1rem;
+}
 
-    /* ===== 主要內容區塊 Main ===== */
-    main {
-    max-width: var(--max-width);
-    margin: 0 auto; /* 改成 0 auto，讓 header 和 main 之間的距離由 header 的 padding-bottom 控制 */
-    padding: 0 20px 60px;
-    }
-    article {
-    background: var(--card-bg);
-    padding: 40px; /* 增加卡片內部空間，讓內容呼吸 */
-    border-radius: var(--border-radius-md); /* 圓角變大更柔和 */
-    box-shadow: 0 8px 30px rgba(0,0,0,0.06); /* 陰影微調得更自然 */
-    }
+/* ===== 主要內容區塊 Main ===== */
+main {
+max-width: var(--max-width);
+margin: 0 auto; /* 改成 0 auto，讓 header 和 main 之間的距離由 header 的 padding-bottom 控制 */
+padding: 0 20px 60px;
+}
+article {
+background: var(--card-bg);
+padding: 40px; /* 增加卡片內部空間，讓內容呼吸 */
+border-radius: var(--border-radius-md); /* 圓角變大更柔和 */
+box-shadow: 0 8px 30px rgba(0,0,0,0.06); /* 陰影微調得更自然 */
+}
 
-    /* ===== 標題樣式 Headings ===== */
-    h2 { 
-    color: var(--text-dark); 
-    margin-top: 0;
-    margin-bottom: 24px;
-    text-align: center; /* 讓 h2 置中，作為段落標題 */
-    font-size: 1.6rem;
-    }
-    h3 { 
-    margin-bottom: 10px; 
-    font-size: 1.25rem; /* 讓 h3 明顯比內文大 */
-    color: var(--text-dark);
-    }
+/* ===== 標題樣式 Headings ===== */
+h2 { 
+color: var(--text-dark); 
+margin-top: 0;
+margin-bottom: 24px;
+text-align: center; /* 讓 h2 置中，作為段落標題 */
+font-size: 1.6rem;
+}
+h3 { 
+margin-bottom: 10px; 
+font-size: 1.25rem; /* 讓 h3 明顯比內文大 */
+color: var(--text-dark);
+}
 
-    /* ===== 列表與段落 ===== */
-    p { margin: 16px 0; }
-    ul, ol { margin: 16px 0 24px 24px; padding-left: 0; }
-    li { margin-bottom: 8px; }
+/* ===== 列表與段落 ===== */
+p { margin: 16px 0; }
+ul, ol { margin: 16px 0 24px 24px; padding-left: 0; }
+li { margin-bottom: 8px; }
 
-    /* ===== 核心改造：技巧提示 Tip Box ===== */
-    .tip {
-    border: none; /* 拿掉左邊的粗框線 */
-    border-radius: var(--border-radius-md); /* 圓角加大 */
-    padding: 24px;
-    margin: 24px 0;
-    background-color: var(--theme-light); /* 使用淡淡的橘粉色背景 */
-    }
+/* ===== 核心改造：技巧提示 Tip Box ===== */
+.tip {
+border: none; /* 拿掉左邊的粗框線 */
+border-radius: var(--border-radius-md); /* 圓角加大 */
+padding: 24px;
+margin: 24px 0;
+background-color: var(--theme-light); /* 使用淡淡的橘粉色背景 */
+}
 
-    /* ===== 核心改造：按鈕 CTA Button ===== */
-    .cta {
-    display: inline-block;
-    margin-top: 12px;
-    padding: 12px 24px;
-    background: var(--theme-color); /* 統一使用主題色 */
-    color: white;
-    text-decoration: none;
-    border-radius: var(--border-radius-md); /* 圓角加大 */
-    font-weight: bold;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* 增加點擊動感 */
-    }
-    .cta:hover {
-    transform: translateY(-2px); /* 滑鼠移上去時，按鈕輕微上浮 */
-    box-shadow: 0 6px 15px rgba(232, 122, 93, 0.3); /* 給主題色一個對應的陰影 */
-    }
+/* ===== 核心改造：按鈕 CTA Button ===== */
+.cta {
+display: inline-block;
+margin-top: 12px;
+padding: 12px 24px;
+background: var(--theme-color); /* 統一使用主題色 */
+color: white;
+text-decoration: none;
+border-radius: var(--border-radius-md); /* 圓角加大 */
+font-weight: bold;
+transition: transform 0.2s ease, box-shadow 0.2s ease; /* 增加點擊動感 */
+}
+.cta:hover {
+transform: translateY(-2px); /* 滑鼠移上去時，按鈕輕微上浮 */
+box-shadow: 0 6px 15px rgba(232, 122, 93, 0.3); /* 給主題色一個對應的陰影 */
+}
 
-    /* ===== 延伸閱讀區塊 ===== */
-    /* 這就是你之前問的區塊，我們把它寫進來 */
-    .reading-section {
-    background-color: var(--bg-color); 
-    padding: 32px;            
-    border-radius: var(--border-radius-md);      
-    margin-top: 40px;
-    text-align: center;
-    }
-    .links { 
-    display:flex; 
-    gap: 24px; 
-    flex-wrap:wrap; 
-    margin-top: 24px; 
-    text-align: left; /* 讓卡片內的文字靠左 */
-    }
-    .link-card {
-    padding: 24px;
-    background: var(--card-bg);
-    border-radius: var(--border-radius-md);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.05);
-    flex: 1 1 250px; /* 調整卡片在不同螢幕寬度下的彈性 */
-    border: 1px solid var(--border-color); /* 給卡片一個細邊框，增加細節 */
-    }
-    /* 特別處理延伸閱讀裡的兩個按鈕，讓顏色不一樣 */
-    .link-card a.cta[style*="#4caf50"] {
-        background-color: #5EAAA8 !important; /* 把綠色改成更柔和的藍綠色 */
-    }
-    .link-card a.cta {
-        background-color: var(--theme-color) !important;
-    }
+/* ===== 延伸閱讀區塊 ===== */
+/* 這就是你之前問的區塊，我們把它寫進來 */
+.reading-section {
+background-color: var(--bg-color); 
+padding: 32px;            
+border-radius: var(--border-radius-md);      
+margin-top: 40px;
+text-align: center;
+}
+.links { 
+display:flex; 
+gap: 24px; 
+flex-wrap:wrap; 
+margin-top: 24px; 
+text-align: left; /* 讓卡片內的文字靠左 */
+}
+.link-card {
+padding: 24px;
+background: var(--card-bg);
+border-radius: var(--border-radius-md);
+box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+flex: 1 1 250px; /* 調整卡片在不同螢幕寬度下的彈性 */
+border: 1px solid var(--border-color); /* 給卡片一個細邊框，增加細節 */
+}
+/* 特別處理延伸閱讀裡的兩個按鈕，讓顏色不一樣 */
+.link-card a.cta[style*="#4caf50"] {
+    background-color: #5EAAA8 !important; /* 把綠色改成更柔和的藍綠色 */
+}
+.link-card a.cta {
+    background-color: var(--theme-color) !important;
+}
 
 
-    /* ===== 頁尾 Footer ===== */
-    footer { 
-    text-align:center; 
-    padding: 40px 20px; 
-    color: var(--text-light); 
-    margin-top: 18px; 
-    font-size: 0.9rem; 
-    }
+/* ===== 頁尾 Footer ===== */
+footer { 
+text-align:center; 
+padding: 40px 20px; 
+color: var(--text-light); 
+margin-top: 18px; 
+font-size: 0.9rem; 
+}
 
-    /* ===== 手機版響應式設計 ===== */
-    @media (max-width: 600px) {
-    header h1 { font-size: 1.8rem; }
-    article { padding: 24px; }
-    nav { gap: 16px; }
-    }
+/* ===== 手機版響應式設計 ===== */
+@media (max-width: 600px) {
+header h1 { font-size: 1.8rem; }
+article { padding: 24px; }
+nav { gap: 16px; }
+}
