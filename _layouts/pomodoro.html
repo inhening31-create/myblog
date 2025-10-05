@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <title>{{ page.title }}</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} | MyPomodoro</title>
+  <meta name="description" content="{{ page.description | default: 'MyPomodoro App' }}">
+  <link rel="icon" href="https://img.icons8.com/color/48/tomato.png">
 
-  <!-- 專屬的 CSS -->
-  <link rel="stylesheet" href="{{ '/assets/css/pomodoro.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  
+  <link rel="stylesheet" href="{{'/assets/css/pomodoro.css' | relative_url }}">
 </head>
 <body>
   {% include navbar.html %}
@@ -16,6 +19,9 @@
     {{ content }}
   </main>
 
+  <footer>
+    © 2025 MyPomodoro Blog
+  </footer>
   <!-- Pomodoro 專用 JS -->
   <script src="{{ '/assets/js/pomodoro.js' | relative_url }}"></script>
 </body>

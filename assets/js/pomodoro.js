@@ -85,7 +85,9 @@ function applySettingsAndReset() {
 function timerEndSequence() {
   pauseTimer();
   const message = isWorkSession ? "努力夠久啦！現在休息一下吧🍵！" : "休息時間結束了！讓我們繼續努力💪！";
+  const notificationTitle = isWorkSession ? "休息時間到" : "休息結束";
   showAlert(message);
+  sendNotification(notificationTitle, message);
   setupNextSession();
 }
 
@@ -108,10 +110,30 @@ function showAlert(message) {
 function closeAlert() {
   customAlert.style.display = "none";
 }
+// 跨分頁通知 (你的版本很棒，幾乎沒動)
+function sendNotification(title, message) {
+    if (!("Notification" in window)) {
+        console.log("這個瀏覽器不支援桌面通知");
+        return;
+    }
+    if (Notification.permission === "granted") {
+        new Notification(title, { body: message, icon: "https://img.icons8.com/color/48/tomato.png" });
+    }
+}
 
 startBtn.addEventListener("click", startTimer);
 pauseBtn.addEventListener("click", pauseTimer);
 resetBtn.addEventListener("click", applySettingsAndReset);
 closeAlertBtn.addEventListener("click", closeAlert);
+// ✅ 新增監聽：輸入框變更時，自動重置時間
+    workInput.addEventListener("input", applySettingsAndReset); // 當使用者修改工作時間，馬上重置
+    breakInput.addEventListener("input", applySettingsAndReset); // 當使用者修改休息時間，馬上重置
 
-applySettingsAndReset();
+    // 網頁一載入，就先請求通知權限
+    window.addEventListener('load', () => {
+        if (Notification.permission !== "granted" && Notification.permission !== "denied") {
+            Notification.requestPermission();
+        }
+                    // 網頁載入後，立刻執行一次，確保畫面是正確的初始狀態。
+        applySettingsAndReset()
+    });
