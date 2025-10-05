@@ -1,0 +1,93 @@
+---
+---
+/* ===== MyPomodoro 專用樣式 ===== */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #fdf6e3;
+  color: #333;
+  padding: 40px 20px;
+  transition: background 0.5s ease;
+}
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+#timer {
+  font-size: 48px;
+  margin: 20px 0;
+}
+#progressBarContainer {
+  width: 90%;
+  max-width: 400px;
+  height: 10px;
+  background: #eee;
+  border-radius: 10px;
+  margin: 20px auto;
+  overflow: hidden;
+}
+#progressBar {
+  height: 100%;
+  width: 100%;
+  background: #ccc;
+  transition: width 1s linear, background 0.5s ease;
+  float: right;
+}
+button, input {
+  font-size: 18px;
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  border-radius: 15px;
+}
+button {
+  background: #ff6b6b;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background: #ff4b4b;
+}
+input {
+  width: 80px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+input:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  color: #888;
+}
+#customAlert {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  align-items: center;
+  justify-content: center;
+}
+#customAlertContent {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+}
+.green-btn {
+  background: #4caf50 !important;
+}
+.green-btn:hover {
+  background: #45a049 !important;
+}
+@media (max-width: 600px) {
+  body { padding: 20px; }
+  h1 { font-size: 1.8rem; }
+  #timer { font-size: 36px; }
+  button, input { font-size: 16px; padding: 8px 12px; }
+  #progressBarContainer { width: 100%; }
+}
+

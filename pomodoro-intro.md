@@ -62,7 +62,7 @@ header_subtitle: 專注工作，提升效率，讓每一天更有掌控感
     從今天開始試試看，用番茄鐘來提升效率吧！🍅
   </p>
 
-  <a class="cta" href="https://inhening31-create.github.io/inhening/pomodoro.html" target="_blank" rel="noopener">
+  <a class="cta" href="/myblog/pomodoro.html" target="_blank" rel="noopener">
     開始使用番茄鐘
   </a>
 
@@ -72,12 +72,12 @@ header_subtitle: 專注工作，提升效率，讓每一天更有掌控感
       <div class="link-card">
         <h4>5 個幫助你專注的技巧</h4>
         <p>了解如何在工作與學習中建立專注習慣，讓效率更穩定。</p>
-        <a href="https://inhening31-create.github.io/myblog/focus-tips.html" class="cta" style="background:#4caf50">閱讀文章</a>
+        <a href="/myblog/focus-tips.html" class="cta" style="background:#4caf50">閱讀文章</a>
       </div>
       <div class="link-card">
         <h4>使用 MyPomodoro App（線上番茄鐘）</h4>
         <p>立即開始一個番茄鐘循環，體驗 25 分鐘的專注力量。</p>
-        <a href="https://inhening31-create.github.io/inhening/pomodoro.html" target="_blank" rel="noopener" class="cta">打開番茄鐘</a>
+        <a href="/myblog/pomodoro.html" target="_blank" rel="noopener" class="cta">打開番茄鐘</a>
       </div>
     </div>
   </div>

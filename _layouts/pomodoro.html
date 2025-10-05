@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 專屬的 CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/pomodoro.css' | relative_url }}">
+</head>
+<body>
+  {% include navbar.html %}
+
+  <!-- Pomodoro 專頁內容 -->
+  <main>
+    {{ content }}
+  </main>
+
+  <!-- Pomodoro 專用 JS -->
+  <script src="{{ '/assets/js/pomodoro.js' | relative_url }}"></script>
+</body>
+</html>
+
